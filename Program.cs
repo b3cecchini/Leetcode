@@ -1,6 +1,7 @@
 ﻿using Leetcode.Problems;
 using Leetcode.Utils;
 
+/*
 var root = new TreeNode(0);
 var node1 = new TreeNode(1);
 var node2 = new TreeNode(2);    
@@ -17,7 +18,7 @@ var node6 = new TreeNode(6);
  *           /
  *          6
  */
-
+/*
 root.left = node1;
 root.right = node2;
 node1.left = node3;
@@ -28,7 +29,7 @@ node5.left = node6;
 
 
 var problem = new Fiddle();
-/*var ans = problem.DepthFirst_WithStack(root);
+var ans = problem.DepthFirst_WithStack(root);
 
 Console.WriteLine("Depth first with Stack");
 for (int i = 0; i < ans.Count; i++)
@@ -51,7 +52,7 @@ var a = problem.BreathFirst_WithQueue(root);
 for (int i = 0; i < a.Count; i++)
 {
     Console.WriteLine(a[i]);
-}*/
+}
 var t1 = 3;
 var a1 = problem.TreeIncludes_Recursive(root, t1);
 var t2 = 6;
@@ -74,3 +75,11 @@ Console.WriteLine("Min Value is - " + problem.TreeMin_Itterative(root));
 Console.WriteLine("Min Value(Recursion) is - " + problem.TreeMin_Recursive(root));
 
 Console.WriteLine("Max Sum(Recursion) is - " + problem.TreeMaxSum_Recursive(root));
+*/
+
+
+
+var problem = new _374();
+
+problem.GuessNumber(7);
+
