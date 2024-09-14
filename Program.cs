@@ -97,13 +97,52 @@ node4.next = node5;
 var problem = new _206();
 
 problem.ReverseList(head);
-*/
+
 
 string[] tokens = { "4", "13", "5", "/", "+" };
 
 var problem = new _150();
 
 problem.EvalRPN(tokens);
+*/
+
+var root = new TreeNode(5);
+var node4 = new TreeNode(4);
+var node11 = new TreeNode(11);
+var node7 = new TreeNode(7);
+var node2 = new TreeNode(2);
+var node8 = new TreeNode(8);
+var node13 = new TreeNode(13);
+var node4_r = new TreeNode(4);
+var node1 = new TreeNode(1);
+/*
+ *        5
+ *      /   \ 
+ *     4     8 
+ *    /     / \
+ *   11    13  4
+ *  / \         \
+ * 7   2         1
+ *
+ *
+ *
+ */
+root.left = node4;
+root.right = node8;
+
+node4.left = node11;
+
+node11.left = node7;
+node11.right = node2;
+
+node8.left = node13;
+node8.right = node4_r;
+
+node4_r.right = node1;
+
+var problem = new _112();
+
+problem.HasPathSum(root, 22);
 
 
 

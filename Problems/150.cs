@@ -45,7 +45,6 @@ namespace Leetcode.Problems
             return newArray;
         }
 
-
         private int FindFirstOp(string[] tokens)
         {
             var retval = 0;
