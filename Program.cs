@@ -82,6 +82,7 @@ Console.WriteLine("Max Sum(Recursion) is - " + problem.TreeMaxSum_Recursive(root
 
 //head = [1,2,3,4,5]
 
+/*
 ListNode head = new ListNode(1);
 ListNode node2 = new ListNode(2);
 ListNode node3 = new ListNode(3);
@@ -96,6 +97,14 @@ node4.next = node5;
 var problem = new _206();
 
 problem.ReverseList(head);
+*/
+
+string[] tokens = { "4", "13", "5", "/", "+" };
+
+var problem = new _150();
+
+problem.EvalRPN(tokens);
+
 
 
 
