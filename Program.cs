@@ -106,6 +106,7 @@ var problem = new _150();
 problem.EvalRPN(tokens);
 */
 
+/*
 var root = new TreeNode(5);
 var node4 = new TreeNode(4);
 var node11 = new TreeNode(11);
@@ -126,7 +127,7 @@ var node1 = new TreeNode(1);
  *
  *
  *
- */
+ 
 root.left = node4;
 root.right = node8;
 
@@ -143,6 +144,22 @@ node4_r.right = node1;
 var problem = new _112();
 
 problem.HasPathSum(root, 22);
+*/
+
+var problem = new _1684();
+
+var allowed = "cad";
+string[] words = ["cc", "acd", "b", "ba", "bac", "bad", "ac", "d"];
+
+
+var answer = problem.CountConsistentStrings(allowed, words);
+Console.WriteLine("*********************");
+Console.WriteLine($"Answer: {answer}");
+
+
+
+
+
 
 
 
