@@ -144,8 +144,9 @@ node4_r.right = node1;
 var problem = new _112();
 
 problem.HasPathSum(root, 22);
-*/
 
+
+/*
 var problem = new _1684();
 
 var allowed = "cad";
@@ -155,6 +156,13 @@ string[] words = ["cc", "acd", "b", "ba", "bac", "bad", "ac", "d"];
 var answer = problem.CountConsistentStrings(allowed, words);
 Console.WriteLine("*********************");
 Console.WriteLine($"Answer: {answer}");
+*/
+
+var problem = new _342();
+
+
+
+problem.IsPowerOfFour(17);
 
 
 
