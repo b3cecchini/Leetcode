@@ -158,11 +158,25 @@ Console.WriteLine("*********************");
 Console.WriteLine($"Answer: {answer}");
 */
 
-var problem = new _342();
+var problem = new _232();
 
 
+for (int i = 1; i < 5; i++)
+{
+    problem.Push(i);
+}
 
-problem.IsPowerOfFour(17);
+problem.PrintMain();
+
+Console.WriteLine("***********************");
+Console.WriteLine("Peek " + problem.Peek().ToString());
+
+Console.WriteLine("***********************");
+Console.WriteLine("Pop " + problem.Pop().ToString());
+
+Console.WriteLine("***********************");
+problem.PrintMain();
+
 
 
 
