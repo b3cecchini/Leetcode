@@ -156,7 +156,7 @@ string[] words = ["cc", "acd", "b", "ba", "bac", "bad", "ac", "d"];
 var answer = problem.CountConsistentStrings(allowed, words);
 Console.WriteLine("*********************");
 Console.WriteLine($"Answer: {answer}");
-*/
+
 
 var problem = new _232();
 
@@ -177,6 +177,11 @@ Console.WriteLine("Pop " + problem.Pop().ToString());
 Console.WriteLine("***********************");
 problem.PrintMain();
 
+*/
+
+var problem = new _345();
+
+Console.WriteLine(problem.ReverseVowels("IceCreAm"));
 
 
 
