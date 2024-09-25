@@ -179,9 +179,9 @@ problem.PrintMain();
 
 */
 
-var problem = new _345();
+var problem = new _283();
 
-Console.WriteLine(problem.ReverseVowels("IceCreAm"));
+problem.MoveZeroes([0, 1, 0, 3, 12]);
 
 
 
