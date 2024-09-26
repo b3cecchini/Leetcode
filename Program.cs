@@ -179,9 +179,9 @@ problem.PrintMain();
 
 */
 
-var problem = new _283();
+var problem = new _643();
 
-problem.MoveZeroes([0, 1, 0, 3, 12]);
+problem.FindMaxAverage([1, 12, -5, -6, 50, 3], 4);
 
 
 
