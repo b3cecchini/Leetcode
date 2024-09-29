@@ -177,11 +177,14 @@ Console.WriteLine("Pop " + problem.Pop().ToString());
 Console.WriteLine("***********************");
 problem.PrintMain();
 
-*/
-
 var problem = new _643();
 
 problem.FindMaxAverage([1, 12, -5, -6, 50, 3], 4);
+*/
+
+var problem = new _1207();
+
+problem.UniqueOccurrences([1, 7, 3, 6, 5, 6]);
 
 
 
