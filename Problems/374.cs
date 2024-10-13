@@ -7,14 +7,56 @@ using Leetcode.Utils;
 
 namespace Leetcode.Problems
 {
-    internal class _374
+    public class _374
     {
         private NumberGuess _numberGuess = new ();
+        int min = 1;
+        int max = Int32.MaxValue;
+        int cur;
         public int GuessNumber(int n)
         {
-            int min = 1;
-            int max = Int32.MaxValue;
-            int target = min;
+            int left = 1;
+            int right = n;
+            /*
+            while (left <= right) 
+            {
+                int mid = left +(right-  left) / 2;
+
+                int guess = _numberGuess.guess(mid);
+
+                if(guess == 0) return mid;
+                else if(guess == -1) right = mid - 1;
+                else if(guess == 1) left = mid + 1;
+            }*/
+
+            while (left <= right)
+            {
+                int mid = left + (right - left) / 2;
+                int result = _numberGuess.guess(mid);
+
+                if (result == 0)
+                {
+                    return mid;
+                }
+                else if (result == -1)
+                {
+                    right = mid - 1;
+                }
+                else
+                {
+                    left = mid + 1;
+                }
+            }
+            return 0;
+        }
+
+
+        public int GuessNumber_2(int n)
+        {
+            
+            if(_numberGuess.guess(min) == 0) return n;
+            if(_numberGuess.guess(max) == -1) return n;
+
             while (true)
             {
                 Console.WriteLine("==================================");
@@ -32,7 +74,6 @@ namespace Leetcode.Problems
                 }
                 else
                 {
-                    //Console.WriteLine($"maxGuess / 2 : {_numberGuess.guess(max / 2)}");
                     if(_numberGuess.guess(max / 2) == 1 && _numberGuess.guess(min * 2) == -1)
                     {
                         min++;

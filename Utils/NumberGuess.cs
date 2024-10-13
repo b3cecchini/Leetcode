@@ -8,7 +8,7 @@ namespace Leetcode.Utils
 {
     public class NumberGuess
     {
-        private int number = 854304;
+        private int number = 6;
 
         public int guess(int n)
         { 
