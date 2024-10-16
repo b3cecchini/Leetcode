@@ -187,10 +187,21 @@ var problem = new _1207();
 problem.UniqueOccurrences([1, 7, 3, 6, 5, 6]);
 */
 
-var problem = new _374();
+var problem = new _98();
 
-Console.WriteLine(problem.GuessNumber(10));
+var root = new TreeNode(5);
+var node1 = new TreeNode(1);
+var node4 = new TreeNode(4);
+var node3 = new TreeNode(3);
+var node6 = new TreeNode(6);
 
+root.left = node1;
+root.right = node4;
+
+node4.left = node3;
+node4.right = node6;
+
+Console.WriteLine(problem.IsValidBST(root));
 
 
 
