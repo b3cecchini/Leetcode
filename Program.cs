@@ -187,26 +187,24 @@ var problem = new _1207();
 problem.UniqueOccurrences([1, 7, 3, 6, 5, 6]);
 */
 
-var problem = new _98();
+var problem = new _328();
 
-var root = new TreeNode(5);
-var node1 = new TreeNode(1);
-var node4 = new TreeNode(4);
-var node3 = new TreeNode(3);
-var node6 = new TreeNode(6);
+var head = new ListNode(1);
+var node2 = new ListNode(2);
+var node3 = new ListNode(3);
+var node4 = new ListNode(4);
+var node5 = new ListNode(5);
+var node6 = new ListNode(6);
+var node7 = new ListNode(7);
+var node8 = new ListNode(8);
 
-root.left = node1;
-root.right = node4;
+head.next = node2;
+node2.next = node3;
+node3.next = node4;
+node4.next = node5;
+node5.next = node6;
+node6.next = node7;
+node7.next = node8;
 
-node4.left = node3;
-node4.right = node6;
-
-Console.WriteLine(problem.IsValidBST(root));
-
-
-
-
-
-
-
+Console.WriteLine(problem.OddEvenList(head));
 
