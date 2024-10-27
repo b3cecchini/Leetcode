@@ -185,7 +185,7 @@ problem.FindMaxAverage([1, 12, -5, -6, 50, 3], 4);
 var problem = new _1207();
 
 problem.UniqueOccurrences([1, 7, 3, 6, 5, 6]);
-*/
+
 
 var problem = new _328();
 
@@ -207,4 +207,13 @@ node6.next = node7;
 node7.next = node8;
 
 Console.WriteLine(problem.OddEvenList(head));
+*/
+
+var problem = new _443();
+
+char[] a = ['a', 'a', 'b', 'b', 'c', 'c', 'c'];
+
+char[] b = ['a'];//, 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'];
+problem.Compress(b);
+
 

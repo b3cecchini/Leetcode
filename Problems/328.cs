@@ -12,7 +12,7 @@ namespace Leetcode.Problems
         public ListNode OddEvenList(ListNode head)
         {
             if (head == null) return null;
-            if(head.next == null) return head;
+            if(head.next == null || head.next.next == null) return head;
             ListNode odd = head;
             ListNode even = head.next;
             ListNode evenHead = head.next;
