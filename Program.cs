@@ -209,11 +209,12 @@ node7.next = node8;
 Console.WriteLine(problem.OddEvenList(head));
 */
 
-var problem = new _443();
+var problem = new _1957();
 
-char[] a = ['a', 'a', 'b', 'b', 'c', 'c', 'c'];
+//char[] a = ['a', 'a', 'b', 'b', 'c', 'c', 'c'];
 
-char[] b = ['a'];//, 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'];
-problem.Compress(b);
+//char[] b = ['a'];//, 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'];
+Console.WriteLine("");
+Console.WriteLine($"answer: {problem.MakeFancyString("aaabaaaa")}");
 
 
