@@ -24,14 +24,18 @@ namespace Leetcode.Problems
 
         public IList<string> LetterCombinations(string digits)
         {
+            var ans = new List<string>();
             HashSet<char> comb = new HashSet<char>();
             foreach (char c in digits)
             {
+                comb.Add(c);
                 foreach (char x in dict[c])
                 {
                     comb.Add(x);
+                   
                 }
             }
+            return ans;
         }
     }
 }

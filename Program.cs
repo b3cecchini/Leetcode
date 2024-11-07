@@ -209,12 +209,23 @@ node7.next = node8;
 Console.WriteLine(problem.OddEvenList(head));
 */
 
-var problem = new _1957();
+var problem = new _841();
 
 //char[] a = ['a', 'a', 'b', 'b', 'c', 'c', 'c'];
 
 //char[] b = ['a'];//, 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'];
-Console.WriteLine("");
-Console.WriteLine($"answer: {problem.MakeFancyString("aaabaaaa")}");
+//Console.WriteLine("");
+
+
+
+IList<IList<int>> lists = new List<IList<int>>
+{
+    new List<int> { 1, 3 },
+    new List<int> { 3, 0, 1 },
+    new List<int> { 2 },
+    new List<int> ()
+};
+
+Console.WriteLine($"answer: {problem.CanVisitAllRooms(lists)}");
 
 
