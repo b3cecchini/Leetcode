@@ -209,8 +209,6 @@ node7.next = node8;
 Console.WriteLine(problem.OddEvenList(head));
 */
 
-var problem = new _74();
-
 //char[] a = ['a', 'a', 'b', 'b', 'c', 'c', 'c'];
 
 //char[] b = ['a'];//, 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'];
@@ -226,8 +224,24 @@ IList<IList<int>> lists = new List<IList<int>>
     new List<int> ()
 };*/
 
-int[][] ints = [[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]];
+TreeNode root = new TreeNode(1);
+TreeNode two = new TreeNode(2);
+TreeNode three = new TreeNode(3);
+TreeNode four = new TreeNode(4);
+TreeNode five = new TreeNode(5);
 
-Console.WriteLine($"answer: {problem.SearchMatrix(ints, 13)}");
+root.left = two;
+root.right = three;
+two.left = four;
+three.right = five;
+
+
+var problem = new _102();
+
+//int[][] ints = [[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]];
+
+problem.LevelOrder(root);
+
+
 
 

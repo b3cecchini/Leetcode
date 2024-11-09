@@ -12,20 +12,28 @@ namespace Leetcode.Problems
         public void RecoverTree(TreeNode root)
         {
             if (root == null) return;
-            if(dfs(root).val > root.val)
+            if (root.left != null)
             {
+                if(root.left.val > root.val)
+                {
+                    int temp = root.val;
+                    root.val = root.left.val;
+                    root.left.val = temp;
+                    return;
+                }
+                RecoverTree(root.left);
+            }
 
-            };
-        }
-
-        private TreeNode dfs(TreeNode root)
-        {
-            if (root == null) return null;
-            if(dfs(root.left) != null && root.left.val > root.val) 
+            if (root.right != null)
             {
-                int temp = root.val;
-                root.val = root.left.val;
-                root.left.val = temp;
+                if (root.right.val < root.val)
+                {
+                    int temp = root.val;
+                    root.val = root.right.val;
+                    root.right.val = temp;
+                    return;
+                }
+                RecoverTree(root.right);
             }
         }
     }

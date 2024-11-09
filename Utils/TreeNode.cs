@@ -19,4 +19,23 @@ namespace Leetcode.Utils
             this.right = right;
         }
     }
+
+    public class TreePrinter
+    {
+        public static void PrintTree(TreeNode root, string indent = "", bool isLeft = false)
+        {
+            if (root == null)
+                return;
+
+            Console.WriteLine($"{indent}├── {root.val}");
+
+            // Create new indent for children
+            indent += isLeft ? "│   " : "    ";
+
+            // Process children
+            PrintTree(root.left, indent, true);
+            PrintTree(root.right, indent, false);
+        }
+    }
+
 }
