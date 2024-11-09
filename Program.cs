@@ -209,7 +209,7 @@ node7.next = node8;
 Console.WriteLine(problem.OddEvenList(head));
 */
 
-var problem = new _841();
+var problem = new _74();
 
 //char[] a = ['a', 'a', 'b', 'b', 'c', 'c', 'c'];
 
@@ -217,15 +217,17 @@ var problem = new _841();
 //Console.WriteLine("");
 
 
-
+/*
 IList<IList<int>> lists = new List<IList<int>>
 {
     new List<int> { 1, 3 },
     new List<int> { 3, 0, 1 },
     new List<int> { 2 },
     new List<int> ()
-};
+};*/
 
-Console.WriteLine($"answer: {problem.CanVisitAllRooms(lists)}");
+int[][] ints = [[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]];
+
+Console.WriteLine($"answer: {problem.SearchMatrix(ints, 13)}");
 
 
