@@ -224,16 +224,13 @@ IList<IList<int>> lists = new List<IList<int>>
     new List<int> ()
 };*/
 
-TreeNode root = new TreeNode(1);
-TreeNode two = new TreeNode(2);
-TreeNode three = new TreeNode(3);
-TreeNode four = new TreeNode(4);
-TreeNode five = new TreeNode(5);
+TreeNode root = new TreeNode(-100);
+TreeNode n_th = new TreeNode(-200);
+TreeNode n_trh = new TreeNode(-300);
+TreeNode n_tw= new TreeNode(-20);
+TreeNode n_f = new TreeNode(-5);
+TreeNode n_tn = new TreeNode(-10);
 
-root.left = two;
-root.right = three;
-two.left = four;
-three.right = five;
 
 
 var problem = new _102();
