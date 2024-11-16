@@ -222,7 +222,7 @@ IList<IList<int>> lists = new List<IList<int>>
     new List<int> { 3, 0, 1 },
     new List<int> { 2 },
     new List<int> ()
-};*/
+};
 
 TreeNode root = new TreeNode(-100);
 TreeNode n_th = new TreeNode(-200);
@@ -238,6 +238,21 @@ var problem = new _102();
 //int[][] ints = [[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]];
 
 problem.LevelOrder(root);
+
+
+var problem = new _147();
+
+var input = new ListNode(4);
+input.next = new ListNode(2);
+input.next.next = new ListNode(1);
+input.next.next.next = new ListNode(3);
+
+Console.WriteLine(problem.InsertionSortList(input));
+*/
+var problem = new _168();
+
+Console.WriteLine(problem.ConvertToTitle(52));
+
 
 
 
