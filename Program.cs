@@ -249,9 +249,23 @@ input.next.next.next = new ListNode(3);
 
 Console.WriteLine(problem.InsertionSortList(input));
 */
-var problem = new _164();
+/*
+var problem = new _1380();
 
-Console.WriteLine(problem.MaximumGap([3, 6, 9, 1]));
+int[][] input = [[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]];
+
+problem.LuckyNumbers(input);
+*/
+
+var problem = new _2418();
+
+string[] names = ["Mary", "John", "Emma"];
+int[] heights = [180, 165, 170];
+
+var ans = problem.SortPeople(names, heights);
+
+
+
 
 
 
