@@ -257,12 +257,9 @@ int[][] input = [[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]];
 problem.LuckyNumbers(input);
 */
 
-var problem = new _2418();
+var problem = new _387();
 
-string[] names = ["Mary", "John", "Emma"];
-int[] heights = [180, 165, 170];
-
-var ans = problem.SortPeople(names, heights);
+var ans = problem.FirstUniqChar("aadadaad");
 
 
 

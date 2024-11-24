@@ -25,5 +25,24 @@ namespace Leetcode.Problems
 
             return list.ToArray();
         }
+
+        // problem 1636
+        public int[] FrequencySort(int[] nums)
+        {
+            List<int> ans = new List<int>();
+            SortedDictionary<int, int> dict = new();
+
+            foreach (var n in nums)
+            {
+                if (dict.ContainsKey(n))
+                {
+                    var temp = dict.GetValueOrDefault(n);
+                    
+                }
+            }
+
+            return ans.ToArray();
+
+        }
     }
 }
