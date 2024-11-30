@@ -255,11 +255,16 @@ var problem = new _1380();
 int[][] input = [[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]];
 
 problem.LuckyNumbers(input);
+
+
+var problem = new _3();
+
+var ans = problem.LengthOfLongestSubstring("pwwkew");
 */
 
-var problem = new _387();
+var problem = new _1446();
 
-var ans = problem.FirstUniqChar("aadadaad");
+problem.MaxPower("cc");
 
 
 
