@@ -262,14 +262,34 @@ var problem = new _3();
 var ans = problem.LengthOfLongestSubstring("pwwkew");
 */
 
-var problem = new _1446();
+/*
+ *          1
+        /   |   \ 
+       3    2    4
+      / \
+    5    6  
+ 
+ 
+ */
 
-problem.MaxPower("cc");
+var problem = new _429();
 
+var root = new Node(1);
 
+var two = new Node(2);
+var three = new Node(3);
+var four = new Node(4);
+var five = new Node(5);
+var six = new Node(6);
 
+root.children.Add(two);
+root.children.Add(three);
+root.children.Add(four);
 
+three.children.Add(five);
+three.children.Add(six);
 
+problem.LevelOrder(root);
 
 
 
