@@ -270,7 +270,7 @@ var ans = problem.LengthOfLongestSubstring("pwwkew");
     5    6  
  
  
- */
+ 
 
 var problem = new _429();
 
@@ -290,6 +290,11 @@ three.children.Add(five);
 three.children.Add(six);
 
 problem.LevelOrder(root);
+*/
+
+var problem = new _300();
+
+problem.LengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]);
 
 
 
