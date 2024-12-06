@@ -1,5 +1,6 @@
 ﻿using Leetcode.Problems;
 using Leetcode.Utils;
+using static System.Net.Mime.MediaTypeNames;
 
 /*
 var root = new TreeNode(0);
@@ -292,9 +293,11 @@ three.children.Add(six);
 problem.LevelOrder(root);
 */
 
-var problem = new _300();
+var problem = new _102();
 
-problem.LengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]);
+
+
+problem.RemoveElement([3, 2, 2, 3], 3);
 
 
 
