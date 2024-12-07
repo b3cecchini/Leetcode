@@ -293,11 +293,11 @@ three.children.Add(six);
 problem.LevelOrder(root);
 */
 
-var problem = new _102();
+var problem = new _2150();
 
 
 
-problem.RemoveElement([3, 2, 2, 3], 3);
+problem.FindLonely([10, 6, 5, 8]);
 
 
 
