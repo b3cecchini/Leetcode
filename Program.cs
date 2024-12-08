@@ -293,11 +293,11 @@ three.children.Add(six);
 problem.LevelOrder(root);
 */
 
-var problem = new _2150();
+var problem = new _507();
 
 
 
-problem.FindLonely([10, 6, 5, 8]);
+problem.CheckPerfectNumber(28);
 
 
 
