@@ -11,6 +11,7 @@ namespace Leetcode.Problems
         public bool CheckPerfectNumber(int num)
         {
             int sum = 0;
+            
             int divisor = 2;
             HashSet<int> set = new HashSet<int>();
             
@@ -23,7 +24,10 @@ namespace Leetcode.Problems
                 }
                 divisor++;
             }
-            set.Add(1);
+            if (num != 1)
+            {
+                set.Add(1);
+            }
             foreach (int i in set)
             {
                 sum += i;
