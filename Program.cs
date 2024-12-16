@@ -293,11 +293,9 @@ three.children.Add(six);
 problem.LevelOrder(root);
 */
 
-var problem = new _507();
+var problem = new _3185();
 
-
-
-problem.CheckPerfectNumber(28);
+problem.CountCompleteDayPairs([12, 12, 30, 24, 24]);
 
 
 
