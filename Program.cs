@@ -291,11 +291,16 @@ three.children.Add(five);
 three.children.Add(six);
 
 problem.LevelOrder(root);
-*/
+
 
 var problem = new _3185();
 
 problem.CountCompleteDayPairs([12, 12, 30, 24, 24]);
+*/
+
+var problem = new _2938();
+
+problem.MinimumSteps("0011010");
 
 
 
