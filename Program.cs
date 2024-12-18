@@ -296,11 +296,12 @@ problem.LevelOrder(root);
 var problem = new _3185();
 
 problem.CountCompleteDayPairs([12, 12, 30, 24, 24]);
-*/
+
 
 var problem = new _645();
 
 problem.FindErrorNums([1, 2, 2, 4]);
+*/
+var problem = new _49();
 
-
-
+Console.WriteLine(problem.GroupAnagrams(["", ""]));
