@@ -298,9 +298,9 @@ var problem = new _3185();
 problem.CountCompleteDayPairs([12, 12, 30, 24, 24]);
 */
 
-var problem = new _2938();
+var problem = new _645();
 
-problem.MinimumSteps("0011010");
+problem.FindErrorNums([1, 2, 2, 4]);
 
 
 
