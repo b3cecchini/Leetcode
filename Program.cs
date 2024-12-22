@@ -301,7 +301,27 @@ problem.CountCompleteDayPairs([12, 12, 30, 24, 24]);
 var problem = new _645();
 
 problem.FindErrorNums([1, 2, 2, 4]);
-*/
+
 var problem = new _49();
 
 Console.WriteLine(problem.GroupAnagrams(["", ""]));
+
+var problem = new _901();
+
+problem.StockSpanner();
+
+problem.Next(100);
+problem.Next(80);
+problem.Next(60);
+problem.Next(70);
+problem.Next(60);
+problem.Next(75);
+problem.Next(85);
+*/
+
+var problem2 = new _3392();
+
+problem2.CountSubarrays([-1, -4, -1, 4]);
+//
+
+
