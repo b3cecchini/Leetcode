@@ -319,9 +319,9 @@ problem.Next(75);
 problem.Next(85);
 */
 
-var problem2 = new _3392();
+var problem2 = new _3194();
 
-problem2.CountSubarrays([-1, -4, -1, 4]);
-//
+problem2.MinimumAverage([7, 8, 3, 4, 15, 13, 4, 1]);
+
 
 
