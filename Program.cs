@@ -319,9 +319,9 @@ problem.Next(75);
 problem.Next(85);
 */
 
-var problem2 = new _3194();
+var problem2 = new _754();
 
-problem2.MinimumAverage([7, 8, 3, 4, 15, 13, 4, 1]);
+problem2.ReachNumber(2);
 
 
 
