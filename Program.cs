@@ -317,11 +317,15 @@ problem.Next(70);
 problem.Next(60);
 problem.Next(75);
 problem.Next(85);
+
+
+var problem2 = new _2380();
+
+problem2.SecondsToRemoveOccurrences("0110101");
 */
 
-var problem2 = new _754();
-
-problem2.ReachNumber(2);
+var problem = new _2374();
+problem.EdgeScore([1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
 
 
 
