@@ -325,10 +325,25 @@ problem2.SecondsToRemoveOccurrences("0110101");
 
 var problem = new _2374();
 problem.EdgeScore([1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+
+
+ListNode head = new ListNode(1);
+head.next = new ListNode(2);
+head.next.next = new ListNode(3);
+
+var problem = new _382(head);
+problem.GetRandom();
+problem.GetRandom();
+problem.GetRandom();
+problem.GetRandom();
+problem.GetRandom();
 */
 
-var problem = new _1422();
-problem.MaxScore("00");
+var problem = new _498(); //
+//problem.FindDiagonalOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+problem.FindDiagonalOrder([[2, 5], [8, 4], [0, -1]]);
+
+
 
 
 
