@@ -322,10 +322,13 @@ problem.Next(85);
 var problem2 = new _2380();
 
 problem2.SecondsToRemoveOccurrences("0110101");
-*/
 
 var problem = new _2374();
 problem.EdgeScore([1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+*/
+
+var problem = new _1422();
+problem.MaxScore("00");
 
 
 
