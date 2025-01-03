@@ -337,11 +337,15 @@ problem.GetRandom();
 problem.GetRandom();
 problem.GetRandom();
 problem.GetRandom();
-*/
+
 
 var problem = new _498(); //
 //problem.FindDiagonalOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
 problem.FindDiagonalOrder([[2, 5], [8, 4], [0, -1]]);
+*/
+
+var problem = new _3();
+problem.LengthOfLongestSubstring("dvdf");
 
 
 

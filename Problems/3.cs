@@ -14,30 +14,20 @@ namespace Leetcode.Problems
         {
             HashSet<char> h = new();
             int max = 0;
-            int count = 0;
 
-
-            //  "dvdf"
-            //    d
-            //  h: [d]
-
-            // count 1
-            // max: 0
-
+            // "dvdf"
 
             foreach (var c in s)
             {
                 if (h.Contains(c))
                 {
+                    max = Math.Max(max, h.Count);
                     h = new();
-                    max = Math.Max(max, count);
-                    count = 1;
                 }
-                else count++;
                 h.Add(c);
             }
 
-            return Math.Max(max, count);
+            return Math.Max(max, h.Count);
         }
 
     }
