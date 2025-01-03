@@ -13,21 +13,24 @@ namespace Leetcode.Problems
         public int LengthOfLongestSubstring(string s)
         {
             HashSet<char> h = new();
+            int l = 0;
             int max = 0;
 
             // "dvdf"
 
-            foreach (var c in s)
+            for (int r = 0; r < s.Length; r++)
             {
-                if (h.Contains(c))
+                while (h.Contains(s[r]))
                 {
-                    max = Math.Max(max, h.Count);
-                    h = new();
+                    h.Remove(s[l]);
+                    l++;
                 }
-                h.Add(c);
+
+                h.Add(s[r]);
+                max = Math.Max(max, r - l + 1);
             }
 
-            return Math.Max(max, h.Count);
+            return max;
         }
 
     }
