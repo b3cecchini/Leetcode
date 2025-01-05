@@ -344,8 +344,8 @@ var problem = new _498(); //
 problem.FindDiagonalOrder([[2, 5], [8, 4], [0, -1]]);
 */
 
-var problem = new _3();
-problem.LengthOfLongestSubstring("dvdf");
+var problem = new _1253();
+problem.OddCells(2, 3, [[0,1], [1,1]]);
 
 
 
