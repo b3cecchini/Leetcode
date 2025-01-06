@@ -162,6 +162,44 @@ namespace Leetcode.Problems
             return root.val + maxChild;
         }
 
+        public void PrintTreeByLevel(TreeNode root)
+        {
+            Dictionary<int, List<int>> d = new Dictionary<int, List<int>>();
+
+            Queue<(TreeNode, int)> queue = new Queue<(TreeNode, int)>();
+
+            queue.Enqueue((root, 1));
+
+            while (queue.Count > 0)
+            {
+                var curr = queue.Dequeue();
+
+                if(d.ContainsKey(curr.Item2))
+                {
+                    d[curr.Item2].Add(curr.Item1.val);
+                }
+                else
+                {
+                    d[curr.Item2] = new List<int>() { curr.Item1.val};
+                }
+
+                if (curr.Item1.left != null) { queue.Enqueue((curr.Item1.left, curr.Item2 + 1)); }
+                if (curr.Item1.right != null) { queue.Enqueue((curr.Item1.right, curr.Item2 + 1)); }
+            }
+
+
+            // counts.OrderByDescending(pair => pair.Value).Select(pair => pair.Key).Take(k).ToArray();
+            foreach (var entry in d.OrderBy(pair => pair.Key).Select(pair => pair.Value))
+            {
+                foreach (var value in entry) 
+                {
+                    Console.Write(value + " ");
+                }
+                Console.WriteLine();
+            }
+
+        }
+
 
 
 
