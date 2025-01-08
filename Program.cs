@@ -346,7 +346,7 @@ problem.FindDiagonalOrder([[2, 5], [8, 4], [0, -1]]);
 
 var problem = new _1253();
 problem.OddCells(2, 3, [[0,1], [1,1]]);
-*/
+
 
 TreeNode root = new TreeNode(0);
 TreeNode one = new TreeNode(1);
@@ -372,7 +372,7 @@ five.right = new TreeNode(8);
 
 
 // Expected
-/*
+
          0
       /    \
      1      2
@@ -381,13 +381,24 @@ five.right = new TreeNode(8);
       /    \
      7      8
 
- */
-
 var fiddle = new Fiddle();
 fiddle.PrintTreeByLevel(root);
 
 
-var o = 1;
+var problem = new _3042();
+problem.CountPrefixSuffixPairs(["a", "aba", "ababa", "aa"]);
+
+
+ListNode head = new(0);
+head.next = new ListNode(1);
+head.next.next = new ListNode(2);
+head.next.next.next = new ListNode(3);
+var problem = new _817();
+problem.NumComponents(head, [0,1,3]);
+*/
+var problem = new _811();
+problem.SubdomainVisits(["9001 discuss.leetcode.com"]);
+
 
 
 
